@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>기술정보 이력서</title>
+</head>
+<body>
+	
+<h2>기술정보 이력서</h2>
+
+<form method="post" action="ex05.jsp">
+	<table border="1">
+		<tr>
+			<th>이름</th>
+			<td><input type="text" name="name"></td>
+		</tr>
+		<tr>
+			<th>주민등록번호</th>
+			<td>
+				<input type="text" name="number1">-
+				<input type="text" name="number2">
+			</td>
+		</tr>
+		<tr>
+			<th>학력</th>
+			<td>
+				<label><input type="radio" name="school" value="highschool">고졸</label>
+				<label><input type="radio" name="school" value="university">대졸</label>
+				<label><input type="radio" name="school" value="Graduate">대학원졸</label>
+			
+			</td>
+		</tr>
+		<tr>
+			<th>전공</th>
+			<td>
+				<select name="major">
+					<option value="computer">컴퓨터소프트웨어공학과</option>
+					<option value="ai">인공지능소프트웨어학과</option>
+					<option value="computer science">컴퓨터정보공학과</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th>사용가능 플랫폼</th>
+			<td>
+				<select multiple size="4" name="platform">
+					<option value="windows 계열 pc">windows 계열 pc</option>
+					<option value="windows 계열 서버">windows 계열 서버</option>
+					<option value="UNIX">UNIX</option>
+					<option value="IBM OS/390">IBM OS/390</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td><input type="submit" value="확인"></td>
+			<td><input type="reset" value="취소"></td>
+		</tr>
+	</table>
+</form>
+
+</body>
+</html>
